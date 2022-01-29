@@ -17,3 +17,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    transition: var(--transition);
+}
+
+body {
+    background-image: linear-gradient(rgba(104, 133, 98, .7), rgba(104, 133, 98, .7)), url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 100px 0;
+    font-family: var(--font);
+}
+
+.topbar {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+}
+.topbar .logo {
+    font-weight: 800;
+}
+.topbar p {
+    color: var(--lightGreen);
+}
+.topbar a {
+    color: var(--white);
+}
+.topbar a:hover {
+    color: var(--lightGreen);
+}
