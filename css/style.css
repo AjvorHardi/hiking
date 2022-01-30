@@ -34,6 +34,20 @@ body {
     margin: 100px 0;
     font-family: var(--font);
 }
+button {
+    padding: 10px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: none;
+    background: var(--lightGreen);
+    margin-top: 20px;
+}
+button:hover {
+    background: var(--white);
+    transition: .3s ease;
+
+}
 
 .topbar {
     max-width: 1140px;
@@ -53,4 +67,37 @@ body {
 }
 .topbar a:hover {
     color: var(--lightGreen);
+}
+
+main {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.intro {
+    display: flex;
+    margin-top: 50px;
+    color: var(--white);
+}
+
+.intro article:first-child {
+    flex: 0 0 40%;
+}
+.intro article:first-child div:first-child{
+    background-color: var(--darkGreen);
+    padding: 30px;
+}
+.intro article:first-child div:last-child{
+    background-color: var(--blue);
+    padding: 30px;
+}
+
+.intro article:last-child {
+    flex: 0 0 60%;
+    background-image: url(../img/uvod.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.intro h2 {
+    margin-bottom: 20px;
 }
