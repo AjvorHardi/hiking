@@ -46,7 +46,6 @@ button {
 button:hover {
     background: var(--white);
     transition: .3s ease;
-
 }
 h2 {
     font-size: 1.6rem;
@@ -159,4 +158,38 @@ main {
     text-align: center;
     color: white;
     margin-bottom: 20px;
+}
+
+.programs {
+    background: white;
+    padding: 50px;
+}
+.programs img {
+    width: 100%;
+    display: block;
+}
+.programs article {
+    display: flex;
+}
+.programs article div{
+    flex: 0 0 50%;
+}
+.programs .wrapper {
+    box-shadow: 0 0 20px gray;
+}
+.programs .text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.programs .text h2 {
+    margin-bottom: 10px;
+}
+.programs button {
+    background: var(--blue);
+}
+.programs button:hover {
+    background: var(--lightGreen);
 }
