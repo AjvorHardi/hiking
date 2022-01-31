@@ -82,6 +82,7 @@ main {
     display: flex;
     margin-top: 50px;
     color: var(--white);
+    flex-wrap: wrap;
 }
 
 .intro article:first-child {
@@ -113,10 +114,11 @@ main {
     padding: 60px 0;
 }
 .info .row:first-child {
-    padding: 0 200px 40px 200px;
+    padding-bottom: 50px;
 }
 .info .row:last-child {
     display: flex;
+    flex-wrap: wrap;
 }
 .info .row:last-child div {
     border-right: 1px solid grey;
@@ -223,3 +225,42 @@ footer input[type="submit"]:hover {
 footer h2 {
     margin-bottom: 15px;
 }
+
+
+/***************
+Responsive
+***************/
+@media(max-width: 768px) {
+    body {
+        padding: 20px;
+        margin: 25px 0;
+    }
+    .topbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro article:first-child {
+        flex: 0 0 100%;
+    }
+    .intro article:last-child {
+        flex: 0 0 100%;
+        height: 300px;
+    }
+    .info .row:last-child div {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+    .programs {
+        padding: 20px;
+    }
+    .programs .wrapper article{
+        display: flex;
+        flex-direction: column;
+    }
+    .programs .wrapper article:last-child .text{
+        order: -1;
+    }
+    .programs .text {
+        padding: 20px;
+    }
+} 
