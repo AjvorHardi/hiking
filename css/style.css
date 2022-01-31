@@ -150,3 +150,13 @@ main {
 .info h2 {
     margin-bottom: 15px;
 }
+
+.slider {
+    background: var(--lightGreen);
+    padding: 60px 20px;
+}
+.slider h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
